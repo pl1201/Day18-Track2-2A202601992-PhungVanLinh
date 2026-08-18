@@ -1,0 +1,57 @@
+{
+  "commitInfo": {
+    "timestamp": 1787023583155,
+    "operation": "WRITE",
+    "operationParameters": {
+      "mode": "Overwrite"
+    },
+    "engineInfo": "delta-rs:py-1.6.2",
+    "operationMetrics": {
+      "execution_time_ms": 134,
+      "num_added_files": 1,
+      "num_added_rows": 200000,
+      "num_partitions": 0,
+      "num_removed_files": 0
+    },
+    "clientVersion": "delta-rs.py-1.6.2"
+  }
+}
+
+{
+  "protocol": {
+    "minReaderVersion": 1,
+    "minWriterVersion": 2
+  }
+}
+
+{
+  "metaData": {
+    "id": "33ef0780-acde-4da6-bfcc-d3ecd435aa06",
+    "name": null,
+    "description": null,
+    "format": {
+      "provider": "parquet",
+      "options": {}
+    },
+    "schemaString": "{\"type\":\"struct\",\"fields\":[{\"name\":\"request_id\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ts\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"raw_json\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+    "partitionColumns": [],
+    "createdTime": 1787023583021,
+    "configuration": {}
+  }
+}
+
+{
+  "add": {
+    "path": "part-00000-eca39e3d-382c-495a-9190-cbd0d25993ff-c000.snappy.parquet",
+    "partitionValues": {},
+    "size": 13987448,
+    "modificationTime": 1787023583155,
+    "dataChange": true,
+    "stats": "{\"numRecords\":200000,\"minValues\":{\"ts\":\"2026-04-01T00:00:00Z\",\"raw_json\":\"{\\\"model\\\": \\\"claude-haiku-4-5\\\", \\\"user_id\\\": \\\"u_1\\\", \\\"usage\\\": {\\\"input\",\"request_id\":\"000071d1-d75e-492a-8563-09047aad41b8\"},\"maxValues\":{\"ts\":\"2026-04-07T23:59:56Z\",\"request_id\":\"fffff48d-f964-43b8-8c42-e79e08a8fea2\",\"raw_json\":\"{\\\"model\\\": \\\"claude-sonnet-4-6\\\", \\\"user_id\\\": \\\"u_999\\\", \\\"usage\\\": {\\\"io\"},\"nullCount\":{\"request_id\":0,\"ts\":0,\"raw_json\":0}}",
+    "tags": null,
+    "baseRowId": null,
+    "defaultRowCommitVersion": null,
+    "clusteringProvider": null
+  }
+}
+
